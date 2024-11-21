@@ -57,7 +57,7 @@ body {
 /* Hero Section Styles */
 .hero-section {
     position: relative;
-    background-image: url('img/hero.jpeg');
+    background-image: url('img/hero.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh; /* Full viewport height */
@@ -66,7 +66,7 @@ body {
     justify-content: center;
     color: white;
     text-align: center;
-    margin-top: 80px; /* Offset for fixed navbar */
+    margin-top: 60px; /* Offset for fixed navbar */
 }
 
 .hero-overlay {
@@ -85,7 +85,7 @@ body {
 
 .hero-content h1 {
     font-family: 'DM Serif Display', serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #ff006e;
     margin-bottom: 1rem;
 }
@@ -109,52 +109,6 @@ body {
     background-color: #d4005a;
 }
 
-/* Updated Services Section Styles */
-.services-section {
-    background-color: #fde8f2; /* Light pink background */
-    padding: 4rem 2rem; /* Increased padding for more spacing */
-    text-align: center;
-}
-
-.services-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
-    gap: 2rem;
-    justify-items: center; /* Center items horizontally */
-}
-
-.service {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-}
-
-.service:hover {
-    transform: translateY(-10px); /* Subtle hover effect */
-}
-
-.icon {
-    color: #d53f8c; /* Pink color for icons */
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.service h3 {
-    font-family: 'DM Serif Display', serif;
-    color: #7a3c3c;
-    margin-bottom: 1rem;
-    font-size: 1.75rem;
-}
-
-.service p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
-}
 
 /* Introduction Section Styles */
 .intro-section {
@@ -235,62 +189,6 @@ body {
     color: #ff006e;
 }
 
-/* Why Trust Me? Section Styles */
-.trust-section {
-    background-color: #f9f9f9; /* Light gray background */
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-.trust-section h2 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 2.5rem;
-    color: #7a3c3c;
-    margin-bottom: 3rem;
-}
-
-.trust-stats {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-    .trust-stats {
-        grid-template-columns: repeat(3, 1fr); /* Three columns on medium+ screens */
-    }
-}
-
-.stat {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-}
-
-.stat:hover {
-    transform: translateY(-10px); /* Subtle hover effect */
-}
-
-.stat h3 {
-    font-size: 3rem;
-    color: #ff006e; /* Pink color for emphasis */
-    margin-bottom: 0.5rem;
-}
-
-.stat-title {
-    font-weight: 600;
-    color: #555;
-    margin-bottom: 1rem;
-}
-
-.stat p {
-    color: #666;
-    line-height: 1.5;
-}
 
 /* Mission & Core Values Section */
 .mission-values-section {
@@ -340,55 +238,67 @@ body {
 
 .mission-card p {
     font-size: 1rem;
+    margin-bottom: 1rem;
     line-height: 1.6;
 }
 
-/* Services Section */
-.services-section {
+.mission-values-section li {
+    margin-bottom: 1rem; /* Adjust spacing as needed */
+    line-height: 1.6;   /* Improves readability for multi-line items */
+}
+
+
+
+
+
+
+
+/* ADHD Challenges Section */
+.adhd-challenges-section {
     background-color: #f9f9f9; /* Light gray background */
     padding: 4rem 2rem;
     text-align: center;
 }
 
-.services-header {
+.adhd-challenges-header {
     margin-bottom: 3rem;
 }
 
-.services-header h2 {
+.adhd-challenges-header h2 {
     font-family: 'DM Serif Display', serif;
     font-size: 2.5rem;
     color: #7a3c3c;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
-.services-header .subtitle {
+.adhd-challenges-header .subtitle {
     font-size: 1.5rem;
     color: #555;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
-.services-header .description {
-    font-size: 1.125rem;
+.adhd-challenges-header .description {
+    font-size: 1.25rem;
     color: #666;
     max-width: 800px;
     margin: 0 auto 3rem;
 }
 
-.services-container {
-    display: grid;
+.adhd-challenges-container {
+     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
-    max-width: 1200px;
+    gap: 1.5rem;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-    .services-container {
-        grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
+    .adhd-challenges-container {
+        grid-template-columns: repeat(5, 1fr); /* Three columns on larger screens */
     }
 }
 
-.service-card {
+.adhd-challenges-card {
     background-color: white;
     padding: 2rem;
     border-radius: 12px;
@@ -397,25 +307,106 @@ body {
     text-align: center;
 }
 
-.service-card:hover {
+.adhd-challenges-card:hover {
     transform: translateY(-10px); /* Hover effect */
 }
 
-.service-image {
+.adhd-challenges-card img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
+    border-radius: 10%;
+    margin-bottom: 2rem;
 }
 
-.service-card h3 {
+.adhd-challenges-card h3 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
     color: #7a3c3c;
 }
 
-.service-card p {
+.adhd-challenges-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+
+
+
+/* Accountability Section */
+.accountability-section {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.accountability-header {
+    margin-bottom: 3rem;
+}
+
+.accountability-header h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5rem;
+    color: #7a3c3c;
+    margin-bottom: 2rem;
+}
+
+.accountability-header .subtitle {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.accountability-header .description {
+    font-size: 1.25rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.accountability-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .accountability-container {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
+    }
+
+.accountability-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.accountability-card:hover {
+    transform: translateY(-10px); /* Hover effect */
+}
+
+.accountability-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    margin-bottom: 1rem;
+}
+
+.accountability-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #7a3c3c;
+}
+
+.accountability-card p {
     font-size: 1rem;
     color: #555;
     line-height: 1.6;
@@ -444,10 +435,11 @@ body {
     }
 }
 
-.signature-image {
+.signature-container img {
     width: 100%;
     max-width: 400px;
     border-radius: 12px;
+    
 }
 
 .signature-text {
@@ -455,6 +447,7 @@ body {
     margin-left: 0;
 }
 
+/* Headings for Signature Section */
 .signature-text h2 {
     font-family: 'DM Serif Display', serif;
     font-size: 2.5rem;
@@ -463,30 +456,38 @@ body {
 }
 
 .signature-text h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #d53f8c; /* Dark pink color */
     margin-bottom: 1.5rem;
 }
 
+/* Paragraph Styling */
 .signature-text p {
     font-size: 1rem;
     color: #555;
     line-height: 1.6;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem; /* Reduced margin for tighter flow */
 }
 
-.cta-button {
-    display: inline-block;
-    background-color: #d53f8c; /* Pink button */
-    color: white;
-    padding: 0.75rem 2rem;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+/* Program Benefits List */
+.program-built-for-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #7a3c3c;
+    margin-bottom: 1rem;
 }
 
-.cta-button:hover {
-    background-color: #b53a73;
+.program-benefits-list {
+    list-style: disc;
+    padding-left: 1.5rem; /* Adjust list alignment */
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.program-benefits-list li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.75rem; /* Spacing between list items */
 }
 
 /* Call to Action Box Styles */
@@ -495,7 +496,7 @@ body {
     margin-top: 3rem;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for contrast */
     text-align: center;
 }
 
@@ -503,21 +504,45 @@ body {
     font-size: 1.25rem;
     color: #555;
     margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; /* Center-align for wide screens */
 }
 
+/* Primary CTA Button */
+.cta-button {
+    display: inline-block;
+    background-color: #d53f8c; /* Pink button */
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #b53a73;
+}
+
+/* Dark CTA Button */
 .cta-button-dark {
     display: inline-block;
     background-color: #333; /* Dark button */
     color: white;
     padding: 0.75rem 2rem;
     border-radius: 25px;
+    font-size: 1rem;
     text-decoration: none;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
 .cta-button-dark:hover {
     background-color: #222;
 }
+
 
 /* How It Works Section Styles */
 .how-it-works-section {
@@ -530,16 +555,27 @@ body {
     font-family: 'DM Serif Display', serif;
     font-size: 2.5rem;
     color: #7a3c3c;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.how-it-works-section .intro-text {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .how-it-works-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
     align-items: center;
+    text-align: left;
 }
 
 @media (min-width: 1024px) {
@@ -551,7 +587,7 @@ body {
 .steps-list {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .step {
@@ -561,20 +597,22 @@ body {
 }
 
 .step-number {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #d53f8c; /* Pink color */
+    flex-shrink: 0; /* Prevents the number from shrinking on smaller screens */
 }
 
 .step-text h3 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    color: #7a3c3c; /* Darker for headings */
 }
 
 .step-text p {
     font-size: 1rem;
-    color: #666;
+    color: #555; /* Slightly lighter gray for body text */
     line-height: 1.6;
 }
 
@@ -584,206 +622,125 @@ body {
 
 .how-it-works-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px; /* Slightly smaller for better balance */
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Packages Section Styles */
-.packages-section {
+/* Additional Styling for Visual Balance */
+@media (min-width: 768px) {
+    .step-number {
+        font-size: 3rem; /* Larger numbers on wider screens */
+    }
+    .step-text h3 {
+        font-size: 1.75rem; /* Slightly larger headings */
+    }
+    .how-it-works-image img {
+        max-width: 400px; /* Slightly larger image on wider screens */
+    }
+
+/* Monthly Investment Section Styles */
+.monthly-investment-section {
     background-color: #f9f9f9; /* Light gray background */
     padding: 4rem 2rem;
     text-align: center;
 }
 
-.packages-section h2 {
+.monthly-investment-section h2 {
     font-family: 'DM Serif Display', serif;
     font-size: 2.5rem;
     color: #7a3c3c;
     margin-bottom: 1rem;
 }
 
-.packages-subtitle {
-    font-size: 1.5rem;
+.monthly-investment-intro {
+    font-size: 1.25rem;
     color: #555;
-    margin-bottom: 1rem;
-}
-
-.packages-description {
-    font-size: 1rem;
-    color: #666;
     max-width: 800px;
-    margin: 0 auto 3rem;
+    margin: 0 auto 2rem;
 }
 
-.packages-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+.investment-container {
+    display: flex;
+    justify-content: center; /* Center-align the card */
+    max-width: 800px; /* Limit the container width for a clean look */
+    margin: 3rem auto;
 }
 
-@media (min-width: 768px) {
-    .packages-container {
-        grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
-    }
-}
-
-.package-card {
+.investment-card {
     background-color: white;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-top: 8px solid #ffb3c1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-top: 8px solid #ffb3c1; /* Pink accent border */
+    text-align: center; /* Center-align all card content */
+    max-width: 600px; /* Adjust width for better balance */
+}
+
+.investment-card:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
     transition: transform 0.3s ease;
-    text-align: center;
 }
 
-.package-card:hover {
-    transform: translateY(-10px);
-}
-
-.highlight-card {
-    background-color: #fde8f2; /* Pink background for the highlighted package */
-    border-top-color: #d53f8c;
-}
-
-.package-icon {
-    color: #d53f8c; /* Pink color for icons */
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.package-card h3 {
+.investment-card h3 {
     font-size: 1.75rem;
     color: #7a3c3c;
     margin-bottom: 1rem;
 }
 
-.package-duration {
-    font-weight: bold;
-    color: #555;
-    margin-bottom: 1rem;
+.investment-card ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 1rem 0;
+    text-align: left; /* Align list items to the left */
 }
 
-.package-price {
+.investment-card ul li {
+    margin-bottom: 0.75rem; /* Add space between list items */
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.investment-card ul li::before {
+    content: "✔"; /* Add a checkmark icon */
+    position: absolute;
+    left: 0;
+    color: #d53f8c; /* Pink checkmark */
+    font-weight: bold;
+}
+
+.investment-price {
     font-size: 1.5rem;
     color: #d53f8c;
     font-weight: bold;
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
 }
 
-/* Call to Action Box Styles */
-.cta-box {
-    background-color: #f0f0f0;
-    margin-top: 3rem;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.investment-note {
+    font-size: 0.875rem;
+    color: #777;
+    margin-top: 1rem;
 }
 
-.cta-box p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 1rem;
-}
-
-.cta-subtitle {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 1.5rem;
-}
-
-.cta-button {
+.investment-button {
     display: inline-block;
     background-color: #d53f8c; /* Pink button */
     color: white;
     padding: 0.75rem 2rem;
     border-radius: 25px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #b53a73;
-}
-
-.cta-note {
-    font-size: 0.875rem;
-    color: #999;
-    margin-top: 1rem;
-}
-
-/* Testimonials Section Styles */
-.testimonials-section {
-    background-color: #ffffff;
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-.testimonials-section h2 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 2.5rem;
-    color: #7a3c3c;
-    margin-bottom: 1rem;
-}
-
-.testimonials-subtitle {
-    font-size: 1.25rem;
-    color: #555;
-    margin-bottom: 3rem;
-}
-
-.testimonials-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-    .testimonials-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    .testimonials-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-.testimonial-card {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.testimonial-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 1.5rem;
-}
-
-.testimonial-card p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-}
-
-.testimonial-card h4 {
-    font-size: 1.25rem;
     font-weight: bold;
-    color: #d53f8c; /* Pink color for names */
+    margin-top: 1.5rem;
 }
+
+.investment-button:hover {
+    background-color: #b53a73; /* Darker pink on hover */
+}
+
+
 
 /* FAQ Section Styles */
 .faq-section {
@@ -853,6 +810,76 @@ body {
     color: #666;
     line-height: 1.6;
 }
+
+
+/* Testimonials Section Styles */
+.testimonials-section {
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5rem;
+    color: #7a3c3c;
+    margin-bottom: 1rem;
+}
+
+.testimonials-subtitle {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 3rem;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .testimonials-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .testimonials-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.testimonial-card h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #d53f8c; /* Pink color for names */
+}
+
 
 /* Newsletter Section Styles */
 .newsletter-section {
