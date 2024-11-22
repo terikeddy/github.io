@@ -34,8 +34,8 @@ body {
 }
 
 .logo {
-    font-family: 'DM Serif Display', serif;
-    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
     color: #D53F8C;
 }
 
@@ -58,6 +58,20 @@ body {
 
 /* Hero Section Styles */
 .hero-section {
+    position: relative;
+    background-image: url('img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 60px; /* Offset for fixed navbar */
+}
+
+.index-hero-section {
     position: relative;
     background-image: url('img/hero.jpg');
     background-size: cover;
@@ -86,15 +100,15 @@ body {
 }
 
 .hero-content h1 {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
     color: #D53F8C;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    margin-bottom: 8rem;
 }
 
 .hero-content a {
@@ -112,16 +126,23 @@ body {
 }
 
 
+
+
+
+
+
+
+
 /* Introduction Section Styles */
 .intro-section {
-    background-color: #002A2E; 
+    background-color: #FFFEFC; 
     padding: 4rem 2rem;
 }
 
 .intro-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -143,21 +164,22 @@ body {
 }
 
 .intro-text h2 {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: #D53F8C;
 }
 
 .intro-text h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #666;
     margin-bottom: 1rem;
 }
 
 .intro-text p {
-    color: #FFFEFC;
-    line-height: 1.6;
+    font-size: 1rem;
+    color: #333333;
+    line-height: 1.8;
     margin-bottom: 2rem;
 }
 
@@ -192,28 +214,35 @@ body {
 }
 
 
+
+
+
+
+
+
+
 /* Mission & Core Values Section */
 .mission-values-section {
-    background-color: #FFFEFC; 
+    background-color: #002A2E; 
     padding: 4rem 2rem;
 }
 
 .mission-values-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 4rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .mission-values-container {
         grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
     }
 }
 
 .mission-card {
-    background-color: #d53f8c; /* Dark pink background */
+    background-color: #d53f8c; 
     color: white;
     padding: 2rem;
     border-radius: 12px;
@@ -222,11 +251,11 @@ body {
 }
 
 .mission-card:hover {
-    transform: translateY(-10px); /* Subtle hover effect */
+    transform: translateY(-10px); 
 }
 
 .mission-card h3 {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 2rem;
     margin-bottom: 1rem;
     display: flex;
@@ -235,18 +264,18 @@ body {
 
 .mission-card h3 i {
     margin-right: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .mission-card p {
     font-size: 1rem;
     margin-bottom: 1rem;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 .mission-values-section li {
     margin-bottom: 1rem; /* Adjust spacing as needed */
-    line-height: 1.6;   /* Improves readability for multi-line items */
+    line-height: 1.8;   /* Improves readability for multi-line items */
 }
 
 
@@ -257,7 +286,7 @@ body {
 
 /* ADHD Challenges Section */
 .adhd-challenges-section {
-    background-color: #f9f9f9; /* Light gray background */
+    background-color: #FFFEFC; 
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -267,22 +296,16 @@ body {
 }
 
 .adhd-challenges-header h2 {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #D53F8C;
-    margin-bottom: 2rem;
-}
-
-.adhd-challenges-header .subtitle {
-    font-size: 1.5rem;
-    color: #555;
+    color: #F471A2;
     margin-bottom: 2rem;
 }
 
 .adhd-challenges-header .description {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     color: #666;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto 3rem;
 }
 
@@ -321,7 +344,7 @@ body {
 }
 
 .adhd-challenges-card h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
     color: #D53F8C;
@@ -329,8 +352,8 @@ body {
 
 .adhd-challenges-card p {
     font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
+    color: #333333;
+    line-height: 1.8;
 }
 
 
@@ -339,7 +362,7 @@ body {
 
 /* Accountability Section */
 .accountability-section {
-    background-color: #f9f9f9; /* Light gray background */
+    background-color: #002A2E; 
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -349,22 +372,22 @@ body {
 }
 
 .accountability-header h2 {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #D53F8C;
+    color: #F471A2;
     margin-bottom: 2rem;
 }
 
 .accountability-header .subtitle {
     font-size: 1.5rem;
-    color: #555;
+    color: #f5df4d;
     margin-bottom: 2rem;
 }
 
 .accountability-header .description {
-    font-size: 1.25rem;
-    color: #666;
-    max-width: 800px;
+    font-size: 1.2rem;
+    color: #FFFEFC;
+    max-width: 900px;
     margin: 0 auto 3rem;
 }
 
@@ -402,7 +425,7 @@ body {
 }
 
 .accountability-card h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
     color: #D53F8C;
@@ -410,13 +433,19 @@ body {
 
 .accountability-card p {
     font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
+    color: #333333;
+    line-height: 1.8;
 }
+
+
+
+
+
+
 
 /* Signature Service Section Styles */
 .signature-service-section {
-    background-color: #FFFEFC; /* Light pink background */
+    background-color: #FFFEFC; 
     padding: 4rem 2rem;
 }
 
@@ -451,14 +480,14 @@ body {
 
 /* Headings for Signature Section */
 .signature-text h2 {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     color: #D53F8C;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .signature-text h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #d53f8c; /* Dark pink color */
     margin-bottom: 1.5rem;
 }
@@ -466,8 +495,8 @@ body {
 /* Paragraph Styling */
 .signature-text p {
     font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
+    color: #333333;
+    line-height: 1.8;
     margin-bottom: 1.5rem; /* Reduced margin for tighter flow */
 }
 
@@ -488,13 +517,13 @@ body {
 
 .program-benefits-list li {
     font-size: 1rem;
-    color: #555;
+    color: #333333;
     margin-bottom: 0.75rem; /* Spacing between list items */
 }
 
 /* Call to Action Box Styles */
 .cta-box {
-    background-color: white;
+    background-color: #D53F8C;
     margin-top: 3rem;
     padding: 2rem;
     border-radius: 12px;
@@ -503,8 +532,8 @@ body {
 }
 
 .cta-box p {
-    font-size: 1.25rem;
-    color: #555;
+    font-size: 1rem;
+    color: #FFFEFC;
     margin-bottom: 1.5rem;
     max-width: 800px;
     margin-left: auto;
@@ -514,8 +543,8 @@ body {
 /* Primary CTA Button */
 .cta-button {
     display: inline-block;
-    background-color: #d53f8c; /* Pink button */
-    color: white;
+    background-color: #FFFEFC; /* Pink button */
+    color: #D53F8C;
     padding: 0.75rem 2rem;
     border-radius: 25px;
     font-size: 1rem;
@@ -531,8 +560,8 @@ body {
 /* Dark CTA Button */
 .cta-button-dark {
     display: inline-block;
-    background-color: #333; /* Dark button */
-    color: white;
+    background-color: #FFFEFC; /* Dark button */
+    color: #D53F8C;
     padding: 0.75rem 2rem;
     border-radius: 25px;
     font-size: 1rem;
@@ -548,23 +577,23 @@ body {
 
 /* How It Works Section Styles */
 .how-it-works-section {
-    background-color: #f9f9f9; /* Light gray background */
+    background-color: #002A2E; 
     padding: 4rem 2rem;
     text-align: center;
 }
 
 .how-it-works-section h2 {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     color: #D53F8C;
     margin-bottom: 1.5rem;
 }
 
 .how-it-works-section .intro-text {
-    font-size: 1.25rem;
-    color: #555;
+    font-size: 1rem;
+    color: #FFFEFC;
     margin-bottom: 3rem;
-    line-height: 1.6;
+    line-height: 1.8;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -606,7 +635,7 @@ body {
 }
 
 .step-text h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
     color: #D53F8C; /* Darker for headings */
@@ -614,8 +643,8 @@ body {
 
 .step-text p {
     font-size: 1rem;
-    color: #555; /* Slightly lighter gray for body text */
-    line-height: 1.6;
+    color: #FFFEFC; 
+    line-height: 1.8;
 }
 
 .how-it-works-image {
@@ -635,7 +664,7 @@ body {
         font-size: 3rem; /* Larger numbers on wider screens */
     }
     .step-text h3 {
-        font-size: 1.75rem; /* Slightly larger headings */
+        font-size: 2rem; /* Slightly larger headings */
     }
     .how-it-works-image img {
         max-width: 400px; /* Slightly larger image on wider screens */
@@ -643,13 +672,13 @@ body {
 
 /* Monthly Investment Section Styles */
 .monthly-investment-section {
-    background-color: #f9f9f9; /* Light gray background */
+    background-color: #FFFEFC; 
     padding: 4rem 2rem;
     text-align: center;
 }
 
 .monthly-investment-section h2 {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     color: #D53F8C;
     margin-bottom: 1rem;
@@ -657,7 +686,7 @@ body {
 
 .monthly-investment-intro {
     font-size: 1.25rem;
-    color: #555;
+    color: #333333;
     max-width: 800px;
     margin: 0 auto 2rem;
 }
@@ -685,7 +714,7 @@ body {
 }
 
 .investment-card h3 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     color: #D53F8C;
     margin-bottom: 1rem;
 }
@@ -702,7 +731,7 @@ body {
     padding-left: 1.5rem;
     position: relative;
     font-size: 1rem;
-    color: #555;
+    color: #333333;
     line-height: 1.5;
 }
 
@@ -746,13 +775,13 @@ body {
 
 /* FAQ Section Styles */
 .faq-section {
-    background-color: #f9f9f9; /* Light gray background */
+    background-color: #FFFEFC; 
     padding: 4rem 2rem;
     text-align: center;
 }
 
 .faq-section h2 {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     color: #D53F8C;
     margin-bottom: 1rem;
@@ -760,7 +789,7 @@ body {
 
 .faq-subtitle {
     font-size: 1.25rem;
-    color: #555;
+    color: #333333;
     margin-bottom: 3rem;
 }
 
@@ -801,7 +830,7 @@ body {
 }
 
 .faq-content h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
     color: #D53F8C;
@@ -810,19 +839,19 @@ body {
 .faq-content p {
     font-size: 1rem;
     color: #666;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 
 /* Testimonials Section Styles */
 .testimonials-section {
-    background-color: #002A2E;
+    background-color: #FFFEFC;
     padding: 4rem 2rem;
     text-align: center;
 }
 
 .testimonials-section h2 {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     color: #D53F8C;
     margin-bottom: 1rem;
@@ -830,7 +859,7 @@ body {
 
 .testimonials-subtitle {
     font-size: 1.25rem;
-    color: #555;
+    color: #333333;
     margin-bottom: 3rem;
 }
 
@@ -873,19 +902,23 @@ body {
     font-size: 1rem;
     color: #666;
     margin-bottom: 1.5rem;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 .testimonial-card h4 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #d53f8c; /* Pink color for names */
+    color: #d53f8c; 
 }
+
+
+
+
 
 
 /* Newsletter Section Styles */
 .newsletter-section {
-    background-color: #FFFEFC;
+    background-color: #D53F8C;
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -914,28 +947,28 @@ body {
 }
 
 .newsletter-content h2 {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #D53F8C;
+    color: #FFFEFC;
     margin-bottom: 1rem;
 }
 
 .newsletter-content h3 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
-    color: #d53f8c;
+    color: #FFFEFC;
 }
 
 .newsletter-content p {
     font-size: 1rem;
-    color: #666;
+    color: #FFFEFC;
     margin-bottom: 2rem;
 }
 
 .subscribe-button {
     display: inline-block;
-    background-color: #d53f8c;
-    color: white;
+    background-color: #FFFEFC;
+    color: #D53F8C;
     padding: 0.75rem 2rem;
     border-radius: 25px;
     text-decoration: none;
@@ -984,7 +1017,7 @@ body {
 }
 
 .footer-about h3 {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 2rem;
     color: #D53F8C;
     margin-bottom: 1rem;
@@ -1025,7 +1058,7 @@ body {
 .footer-copyright {
     margin-top: 3rem;
     text-align: center;
-    border-top: 1px solid #555;
+    border-top: 1px solid #333333;
     padding-top: 1.5rem;
     width: 100%;
 }
